@@ -17,11 +17,11 @@ const planetImg = document.querySelector(".planet-img-container > img");
 const resultContainer = document.querySelector(".result-container");
 
 selectPlanet.addEventListener("change", (e) => {
-    value = e.target.value;
+    value = e.target.value.toLowerCase();
 
     if (value == "") return;
 
-    pathToImg = `/images/${value}.png`;
+    pathToImg = `images/${value}.png`;
 
     planetImg.src = pathToImg;
     planetImg.alt = `Image of ${value}`;
@@ -48,7 +48,7 @@ calculateBtn.onclick = () => {
         return;
     }
 
-    pathToImg = `/images/${selectPlanet.value}.png`;
+    pathToImg = `images/${selectPlanet.value.toLowerCase()}.png`;
 
     planetImg.src = pathToImg;
     planetImg.alt = `Image of ${selectPlanet.value}`;
