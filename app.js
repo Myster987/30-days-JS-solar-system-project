@@ -69,5 +69,4 @@ calculateBtn.onclick = () => {
                     </div>`;
 
     resultWeigth.innerHTML = result;
-    console.log(resultWeigth);
 };
