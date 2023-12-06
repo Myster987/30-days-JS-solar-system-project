@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Solar system weigth calculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <div class="container">
+                    <h1>Calculate a weigth of an object on a planet</h1>
+                    <div class="input">
+                        <input
+                            type="text"
+                            id="massInput"
+                            placeholder="Enter mass in kg"
+                            pattern="[+]?([0-9]*[.])?[0-9]+"
+                        />
+                        <select name="planet" id="selectPlanet">
+                            <option value="">select object</option>
+                            <option value="Earth">Earth</option>
+                            <option value="Jupiter">Jupiter</option>
+                            <option value="Mars">Mars</option>
+                            <option value="Moon">Moon</option>
+                            <option value="Neptune">Neptune</option>
+                            <option value="Saturn">Saturn</option>
+                            <option value="Uranus">Uranus</option>
+                            <option value="Venus">Venus</option>
+                            <option value="Sun">Sun</option>
+                        </select>
+                        <button id="calculateBtn">Calculate weigth</button>
+                    </div>
+                    <div class="result-container">
+                        <div class="planet-img-container">
+                            <img src="" alt="" />
+                        </div>
+                        <div class="result-weigth"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="app.js"></script>
+    </body>
+</html>
