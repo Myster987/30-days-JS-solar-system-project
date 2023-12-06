@@ -21,7 +21,7 @@ selectPlanet.addEventListener("change", (e) => {
 
     if (value == "") return;
 
-    pathToImg = `./images/${value}.png`;
+    pathToImg = `images/${value}.png`;
 
     planetImg.src = pathToImg;
     planetImg.alt = `Image of ${value}`;
@@ -48,7 +48,7 @@ calculateBtn.onclick = () => {
         return;
     }
 
-    pathToImg = `./images/${selectPlanet.value}.png`;
+    pathToImg = `images/${selectPlanet.value}.png`;
 
     planetImg.src = pathToImg;
     planetImg.alt = `Image of ${selectPlanet.value}`;
