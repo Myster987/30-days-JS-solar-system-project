@@ -1,31 +1,31 @@
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body{
+body {
     background-image: url(./images/galaxy.gif);
     font-style: italic;
     background-repeat: no-repeat;
-    background-size: cover;    
-    max-width:100%;
+    background-size: cover;
+    max-width: 100%;
     height: auto;
     padding: 1rem;
 }
 
-img{
+img {
     font-style: italic;
     background-repeat: no-repeat;
-    background-size: cover;    
-    max-width:100%;
+    background-size: cover;
+    max-width: 100%;
     height: auto;
     pointer-events: none;
 }
 
-.wrapper{
+.wrapper {
     color: white;
     min-height: 100vh;
     display: grid;
@@ -33,33 +33,34 @@ img{
     text-align: center;
 }
 
-.container{
+.container {
     display: grid;
     gap: 0.8rem;
 }
 
-.input{
+.input {
     display: flex;
     gap: 0.4rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-h1{
+h1 {
     font-size: clamp(1.5rem, 1.5rem + 3vw, 3rem);
 }
 
-p{
+p {
     font-size: clamp(1rem, 1rem + 1vw, 2rem);
 }
 
-.input input, select{
+.input input,
+select {
     font-size: 1.35rem;
     border: 2px solid silver;
     border-radius: 6px;
 }
 
-.input button{
+.input button {
     font-size: 1.35rem;
     color: white;
     background-color: #333;
@@ -67,16 +68,16 @@ p{
     border-radius: 6px;
 }
 
-.input button:hover{
+.input button:hover {
     background-color: #242424;
     color: #909090;
 }
 
-input:invalid{
+input:invalid {
     border-color: red;
 }
 
-.result-container{
+.result-container {
     display: none;
     font-size: 2rem;
     padding: 0.5rem;
